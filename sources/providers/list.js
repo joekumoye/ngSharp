@@ -151,15 +151,18 @@
 
         return {
 
-            $get: function (entity) {
+            $get: function () {
 
-                var me = {};
-                for (var prop in _list) {
-                    me[prop] = _list[prop];
-                }
-                me.data = entity;
+                var list = function (entity) {
+                    var me = {};
+                    for (var prop in _list) {
+                        me[prop] = _list[prop];
+                    }
+                    me.data = entity;
+                    return me;
+                };
 
-                return me;                
+                return list;
 
             }
 
