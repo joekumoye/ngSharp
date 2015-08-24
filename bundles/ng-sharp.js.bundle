@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<bundle xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://vswebessentials.com/schemas/v1/bundle.xsd">
+  <settings>
+    <!--Determines if the bundle file should be automatically optimized after creation/update.-->
+    <minify>true</minify>
+    <!--Determine whether to generate/re-generate this bundle on building the solution.-->
+    <runOnBuild>false</runOnBuild>
+    <!--Specifies a custom subfolder to save files to. By default, compiled output will be placed in the same folder and nested under the original file.-->
+    <outputDirectory />
+  </settings>
+  <!--The order of the <file> elements determines the order of the files in the bundle.-->
+  <files>
+    <file>/sources/core.js</file>
+    <file>/sources/providers/list.js</file>
+    <file>/sources/providers/mvcProvider.js</file>
+    <file>/sources/providers/string.js</file>
+    <file>/sources/directives/file-model.js</file>
+    <file>/sources/directives/ng-alias.js</file>
+    <file>/sources/directives/ng-disable-if.js</file>
+    <file>/sources/directives/ng-droplet.js</file>
+    <file>/sources/directives/ng-prefix.js</file>
+    <file>/sources/directives/ng-unique-in.js</file>
+    <file>/sources/controllers/mvcController.js</file>
+  </files>
+</bundle>

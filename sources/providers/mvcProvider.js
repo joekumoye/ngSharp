@@ -14,7 +14,8 @@
 
                     },
 
-                    setting: function () {
+                    settings: {
+
 
                     }
 

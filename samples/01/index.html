@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="sample">
+<head>
+    <title></title>
+    <base url="/" />
+    <script src="../../dependencies/angular.js"></script>
+    <script src="../../dependencies/angular-animate.js"></script>
+    <script src="../../dependencies/angular-ui-router.js"></script>
+    <script src="../../bundles/ng-sharp.js"></script>
+    <script src="app.js"></script>
+    <style>
+        .view-container { padding:20px; }
+    </style>
+</head>
+<body>
+    <a ui-sref="admin.index">Admin</a>
+    <div ui-view class="view-container"></div>
+</body>
+<script src="controllers/homeController.js"></script>
+<script src="controllers/adminController.js"></script>
+<script src="controllers/contactsController.js"></script>
+</html>

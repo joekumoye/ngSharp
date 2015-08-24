@@ -57,6 +57,13 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="bundles\ng-sharp.js">
+      <DependentUpon>ng-sharp.js.bundle</DependentUpon>
+    </Content>
+    <Content Include="bundles\ng-sharp.js.bundle" />
+    <Content Include="bundles\ng-sharp.min.js.map">
+      <DependentUpon>ng-sharp.min.js</DependentUpon>
+    </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -65,11 +72,25 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="bundles\ng-sharp.min.js">
+      <DependentUpon>ng-sharp.js</DependentUpon>
+    </Content>
     <Content Include="dependencies\angular-animate.js" />
     <Content Include="dependencies\angular-ui-router.js" />
     <Content Include="dependencies\angular.js" />
     <Content Include="dependencies\restangular.js" />
     <Content Include="dependencies\ui-bootstrap-tpls-0.12.0.js" />
+    <Content Include="samples\01\controllers\adminController.js" />
+    <Content Include="samples\01\app.js" />
+    <Content Include="samples\01\controllers\contactsController.js" />
+    <Content Include="samples\01\index.html" />
+    <Content Include="samples\01\controllers\homeController.js" />
+    <Content Include="samples\01\views\admin\index.html" />
+    <Content Include="samples\01\views\admin\users\index.html" />
+    <Content Include="samples\01\views\admin\users\new.html" />
+    <Content Include="samples\01\views\admin\users\_layout.html" />
+    <Content Include="samples\01\views\admin\_layout.html" />
+    <Content Include="samples\01\views\home\index.html" />
     <Content Include="sources\controllers\mvcController.js" />
     <Content Include="sources\core.js" />
     <Content Include="sources\directives\file-model.js" />
@@ -88,6 +109,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="samples\01\views\contacts\" />
     <Folder Include="sources\services\" />
   </ItemGroup>
   <PropertyGroup>
